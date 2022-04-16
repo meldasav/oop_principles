@@ -15,8 +15,6 @@ public class CompanyTest {
         Company2 is -> Google - California - (000) 055-5555
                 */
 
-
-            public static void main(String[] args) {
                 Company company1 = new Company();
                 company1.setName("Apple");
                 company1.setAddress("California");
@@ -34,5 +32,5 @@ public class CompanyTest {
             }
         }
 
-    }
+
 
