@@ -21,15 +21,27 @@ public class Test {
         for (Phone phone : myPhone)
             System.out.println(myPhone);
 
-        int max=Integer.MIN_VALUE;
-        Phone mostExpensivePhone=null;
+        int max = Integer.MIN_VALUE;
+        Phone mostExpensivePhone = null;
 
         int countConvertible = 0;
         for (Phone phone : myPhone) {
             if (phone.isConvertible()) countConvertible++;
-            if(phone.price>max)mostExpensivePhone=phone;
+            if (phone.price > max) mostExpensivePhone = phone;
         }
         System.out.println(countConvertible);
         System.out.println("the most expensive phone is = " + mostExpensivePhone.getClass().getSimpleName());
+        // 2.way
+        int howManyConvertible = 0;
+        int mostExpensive = 0;
+        for (Phone phone : myPhone) {
+            if (phone.isConvertible()) howManyConvertible++;
+            if (phone.price > mostExpensive) mostExpensive += phone.price;
+        }
+        System.out.println("the most expensive " + mostExpensive);
+
+        //3.way
+
+        System.out.println(myPhone.stream().filter(Phone::isConvertible).count());
     }
 }
