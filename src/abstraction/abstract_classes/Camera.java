@@ -1,6 +1,6 @@
 package abstraction.abstract_classes;
 
-public interface Camera {
+public interface Camera{
 
     void takesPhoto();
 

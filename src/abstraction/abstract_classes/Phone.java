@@ -17,7 +17,7 @@ public abstract class Phone {
     public abstract void text();
     public abstract boolean isConvertible();
 
-    public String brand;
+    public  String brand;
     public String color;
     public int storage;
     public double price;

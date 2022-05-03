@@ -1,6 +1,9 @@
 package abstraction.abstract_classes;
 
-public interface BlueTooth {
+import abstraction.interfaces.ClassB;
+import abstraction.interfaces.ClassC;
+
+public interface BlueTooth  {
     void connectBlueTooth();
 //static method
     static int getYear(){

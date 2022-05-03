@@ -19,11 +19,11 @@ public class CastingObjects {
          * down casting putting bigger to smaller explicitly
          */
 
-        Dog dog1=(Dog) new Animal();//error you are saying every animal dog
-        System.out.println(dog1);
+      //  Dog dog1=(Dog) new Animal();//error you are saying every animal dog
+    //    System.out.println(dog1);
         Animal a1=new Dog();//up casting
-        Dog dog2=(Dog) a1;
+        Dog dog2=(Dog) a1;//down casting
         a1.eat();
-        dog1.eat();
+     //   dog1.eat();
     }
 }

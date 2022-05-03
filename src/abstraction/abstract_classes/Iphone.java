@@ -35,7 +35,7 @@ public class Iphone extends Phone implements Camera,BlueTooth{
 
 
     @Override
-    public void takesPhoto() {
+   public void takesPhoto() {
         System.out.println("Iphone takes photo");
     }
 
